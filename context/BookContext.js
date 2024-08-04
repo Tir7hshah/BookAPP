@@ -22,7 +22,7 @@ export const BookProvider = ({ children }) => {
       }
     });
 
-    return () => unsubscribe(); // Cleanup on unmount
+    return () => unsubscribe(); 
   }, []);
 
   const borrowBook = (book) => {

@@ -8,14 +8,14 @@ const BooksList = ({ navigation }) => {
   const { books, borrowBook } = useContext(BookContext);
 
   const handlePress = (book) => {
-    navigation.navigate('BookDetail', { book }); // Navigate to BookDetail with the book details
+    navigation.navigate('BookDetail', { book }); 
   };
 
   return (
     <View style={BooksListStyles.container}>
       <FlatList
         data={books}
-        keyExtractor={(item) => item.id} // Ensure the key is unique
+        keyExtractor={(item) => item.id} 
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => handlePress(item)} style={BooksListStyles.bookItem}>
             <Text style={BooksListStyles.bookTitle}>{item.name}</Text>

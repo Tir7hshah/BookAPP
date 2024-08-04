@@ -11,7 +11,7 @@ const Borrowed = () => {
     <View style={BorrowedStyles.container}>
       <FlatList
         data={borrowedBooks}
-        keyExtractor={(item) => item.id} // Ensure the key is unique
+        keyExtractor={(item) => item.id} 
         renderItem={({ item }) => (
           <View style={BorrowedStyles.bookItem}>
             <Text style={BorrowedStyles.bookTitle}>{item.name}</Text>

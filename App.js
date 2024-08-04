@@ -10,7 +10,7 @@ import BooksList from './screens/BooksList';
 import BookDetail from './screens/BookDetail';
 import Borrowed from './screens/Borrowed';
 import { BookProvider } from './context/BookContext';
-import './firebase'; // Ensure this is imported only once
+import './firebase'; 
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
